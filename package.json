@@ -1,5 +1,5 @@
 {
-  "name": "to-do",
+  "name": "wordle-clone",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
