@@ -83,7 +83,7 @@
   <div class="h-screen flex flex-col justify-center items-center">
     <h1 class="text-4xl m-4">wordle clone</h1>
     <div class="grow flex justify-center items-center w-full">
-      <div id="guesses" class="grid grid-rows-6 gap-2 w-80 md:w-96">
+      <div id="guesses" class="grid grid-rows-6 gap-2 w-64 sm:w-80 md:w-96">
         {#each Array(6) as _, guessIdx (guessIdx)}
           {@const currentRow = currentGuess === guessIdx}
           <div id="row-{guessIdx}" class="grid grid-cols-5 gap-2">
