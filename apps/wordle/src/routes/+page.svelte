@@ -84,7 +84,7 @@
     class="container mx-auto h-[100dvh] flex flex-col justify-center items-center"
   >
     <h1 class="text-4xl m-4">wordle clone</h1>
-    <div class="grow flex justify-center items-center w-full">
+    <div class="flex justify-center items-center w-full flex-1">
       <div id="guesses" class="grid grid-rows-6 gap-2 w-3/4 max-w-sm">
         {#each Array(6) as _, guessIdx (guessIdx)}
           {@const currentRow = currentGuess === guessIdx}
