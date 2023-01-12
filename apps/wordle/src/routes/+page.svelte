@@ -108,7 +108,7 @@
       </div>
     </div>
     {#if won}
-      <div class="text-lg md:text-2xl">
+      <div class="sm:text-lg md:text-2xl">
         you won! try again?
         <button class="uppercase font-semibold" formaction={"?/restart"}>
           restart
@@ -116,7 +116,7 @@
       </div>
     {/if}
     {#if !won && guessStates.length === 6}
-      <div class="text-lg md:text-2xl">
+      <div class="sm:text-lg md:text-2xl">
         you lost, try again? (answer was <span
           class="font-semibold text-green-700">{answer}</span
         >)
@@ -126,7 +126,7 @@
       </div>
     {/if}
     {#if !won && form?.badGuess}
-      <div class="text-lg md:text-2xl">bad guess!</div>
+      <div class="sm:text-lg md:text-2xl">bad guess!</div>
     {/if}
     <div id="keyboard" class="w-full max-w-xl m-4">
       {#each ["qwertyuiop", "asdfghjkl", "zxcvbnm"] as row, i (i)}
