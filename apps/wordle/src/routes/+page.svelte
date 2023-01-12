@@ -117,8 +117,8 @@
     {/if}
     {#if !won && guessStates.length === 6}
       <div class="sm:text-lg md:text-2xl">
-        you lost, try again? (answer was <span
-          class="font-semibold text-green-700">{answer}</span
+        try again? (answer was <span class="font-semibold text-green-700"
+          >{answer}</span
         >)
         <button class="uppercase font-semibold" formaction={"?/restart"}>
           restart
