@@ -80,10 +80,12 @@
 </svelte:head>
 
 <form method="POST" action="?/submit" use:enhance={submitHandler}>
-  <div class="w-screen flex flex-col justify-center items-center">
+  <div
+    class="container mx-auto h-screen flex flex-col justify-center items-center"
+  >
     <h1 class="text-4xl m-4">wordle clone</h1>
     <div class="grow flex justify-center items-center w-full">
-      <div id="guesses" class="grid grid-rows-6 gap-2 w-64 sm:w-80 md:w-96">
+      <div id="guesses" class="grid grid-rows-6 gap-2 w-3/4 max-w-sm">
         {#each Array(6) as _, guessIdx (guessIdx)}
           {@const currentRow = currentGuess === guessIdx}
           <div id="row-{guessIdx}" class="grid grid-cols-5 gap-2">
@@ -126,7 +128,7 @@
     {#if !won && form?.badGuess}
       <div class="text-lg md:text-2xl">bad guess!</div>
     {/if}
-    <div id="keyboard" class="w-full md:w-6/12 max-w-xl m-4">
+    <div id="keyboard" class="w-full max-w-xl m-4">
       {#each ["qwertyuiop", "asdfghjkl", "zxcvbnm"] as row, i (i)}
         <div class="flex gap-2 m-2">
           {#if i == 2}
