@@ -10,7 +10,7 @@
 {#key letter}
   <div
     class="border border-gray-400 flex justify-center items-center text-2xl md:text-4xl font-bold uppercase"
-    in:scale={{ duration: letter ? 150 : 0, start: 1.2 }}
+    in:scale={{ duration: letter ? 150 : 0, start: 1.4 }}
     class:correct
     class:miss
     class:close
